@@ -1,0 +1,1159 @@
+<!DOCTYPE html>
+<html lang="en-CA"><head><meta content="local_only" name="x-poe-datastore-behavior"/><meta content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data: blob: https://cdnjs.cloudflare.com https://cdn.jsdelivr.net https://code.jquery.com https://unpkg.com https://d3js.org https://threejs.org https://cdn.plot.ly https://stackpath.bootstrapcdn.com https://maps.googleapis.com https://cdn.tailwindcss.com https://ajax.googleapis.com https://kit.fontawesome.com https://cdn.datatables.net https://maxcdn.bootstrapcdn.com https://code.highcharts.com https://tako-static-assets-production.s3.amazonaws.com https://www.youtube.com https://fonts.googleapis.com https://fonts.gstatic.com https://pfst.cf2.poecdn.net https://puc.poecdn.net https://i.imgur.com https://wikimedia.org https://*.icons8.com https://*.giphy.com https://picsum.photos https://images.unsplash.com; frame-src 'self' https://www.youtube.com https://trytako.com; child-src 'self'; manifest-src 'self'; worker-src 'self'; upgrade-insecure-requests; block-all-mixed-content;" http-equiv="Content-Security-Policy"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="VÊTEMENT LUXBOMB INC. / LUXBOMB CLOTHING INC. - Québec registered company based in Montréal, Canada." name="description"/><meta content="VÊTEMENT LUXBOMB INC." name="company"/><meta content="CA-QC" name="geo.region"/><meta content="Montréal" name="geo.placename"/><meta content="Montréal" name="business:contact_data:locality"/><meta content="Québec" name="business:contact_data:region"/><meta content="Canada" name="business:contact_data:country_name"/>
+<title>Our Lady Undoer of Knots Novena | LUXBOMB CLOTHING INC.</title><link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1a1a'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-size='34' font-family='Arial' fill='%23c9a96e'%3EL%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fefdfb;
+            color: #2d2a26;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: linear-gradient(180deg, #fefdfb 0%, #f7f2eb 50%, #efe8dd 100%);
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 80px;
+            background: linear-gradient(180deg, transparent, #c9a96e);
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero-cross {
+            font-size: 36px;
+            color: #c9a96e;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .hero h1 {
+            font-size: clamp(28px, 5vw, 44px);
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .hero h1 span {
+            color: #8b6914;
+            display: block;
+            font-style: italic;
+        }
+
+        .hero p {
+            font-size: clamp(16px, 2.5vw, 19px);
+            color: #5a5550;
+            margin-bottom: 40px;
+            font-weight: 300;
+            max-width: 580px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn-primary {
+            display: inline-block;
+            background: linear-gradient(135deg, #8b6914, #c9a96e);
+            color: #fff;
+            padding: 18px 48px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(139, 105, 20, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(139, 105, 20, 0.4);
+        }
+
+        /* Divider */
+        .divider {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .divider span {
+            display: inline-block;
+            width: 60px;
+            height: 1px;
+            background: #c9a96e;
+            vertical-align: middle;
+        }
+
+        .divider-icon {
+            display: inline-block;
+            margin: 0 15px;
+            color: #c9a96e;
+            font-size: 14px;
+        }
+
+        /* Pain Section */
+        .pain-section {
+            padding: 80px 20px;
+            background: #fefdfb;
+            text-align: center;
+        }
+
+        .pain-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-subtitle {
+            font-size: 13px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #c9a96e;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .pain-section h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 600;
+            margin-bottom: 40px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .pain-list {
+            list-style: none;
+            text-align: left;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .pain-list li {
+            padding: 18px 0;
+            border-bottom: 1px solid #f0ebe3;
+            font-size: 17px;
+            color: #4a4540;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+        }
+
+        .pain-list li::before {
+            content: '🪢';
+            flex-shrink: 0;
+            font-size: 18px;
+        }
+
+        /* Promise Section */
+        .promise-section {
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #f7f2eb, #efe8dd);
+            text-align: center;
+        }
+
+        .promise-section .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .promise-section h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: #1a1a1a;
+            line-height: 1.3;
+        }
+
+        .promise-section p {
+            font-size: 18px;
+            color: #5a5550;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+
+        .promise-section blockquote {
+            font-style: italic;
+            font-size: 20px;
+            color: #8b6914;
+            margin: 40px auto;
+            padding: 24px 30px;
+            border-left: 3px solid #c9a96e;
+            text-align: left;
+            max-width: 500px;
+        }
+
+        /* What's Included */
+        .included-section {
+            padding: 100px 20px;
+            background: #fefdfb;
+            text-align: center;
+        }
+
+        .included-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .included-section h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 600;
+            margin-bottom: 50px;
+            color: #1a1a1a;
+        }
+
+        .included-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            text-align: left;
+        }
+
+        .included-card {
+            padding: 30px;
+            border: 1px solid #f0ebe3;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .included-card:hover {
+            border-color: #c9a96e;
+            box-shadow: 0 4px 20px rgba(139, 105, 20, 0.08);
+        }
+
+        .included-card-icon {
+            font-size: 28px;
+            margin-bottom: 16px;
+            display: block;
+        }
+
+        .included-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a1a;
+        }
+
+        .included-card p {
+            font-size: 15px;
+            color: #6b6560;
+            font-weight: 300;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 100px 20px;
+            background: linear-gradient(180deg, #efe8dd, #f7f2eb);
+            text-align: center;
+        }
+
+        .testimonials .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .testimonials h2 {
+            font-size: clamp(24px, 4vw, 36px);
+            font-weight: 600;
+            margin-bottom: 16px;
+            color: #1a1a1a;
+        }
+
+        .testimonials-disclaimer {
+            font-size: 13px;
+            color: #888;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 24px;
+            text-align: left;
+        }
+
+        .testimonial-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        .testimonial-card p {
+            font-size: 15px;
+            color: #4a4540;
+            font-style: italic;
+            margin-bottom: 16px;
+            line-height: 1.7;
+        }
+
+        .testimonial-card .name {
+            font-size: 14px;
+            font-weight: 600;
+            color: #8b6914;
+        }
+
+        .testimonial-card .location {
+            font-size: 13px;
+            color: #999;
+        }
+
+        /* Form Section */
+        .form-section {
+            padding: 100px 20px;
+            background: #fefdfb;
+            text-align: center;
+        }
+
+        .form-section .container {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .form-box {
+            background: linear-gradient(135deg, #1a1a1a, #2d2a26);
+            border-radius: 20px;
+            padding: 50px 40px;
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .form-box::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(201, 169, 110, 0.08) 0%, transparent 60%);
+        }
+
+        .form-box .section-subtitle {
+            color: #c9a96e;
+            margin-bottom: 16px;
+            position: relative;
+        }
+
+        .form-box h2 {
+            font-size: clamp(22px, 3.5vw, 28px);
+            font-weight: 600;
+            margin-bottom: 10px;
+            position: relative;
+            line-height: 1.3;
+        }
+
+        .form-box .form-desc {
+            font-size: 15px;
+            color: #aaa;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .form-box .price-highlight {
+            font-size: 14px;
+            color: #c9a96e;
+            font-weight: 600;
+            margin-bottom: 30px;
+            position: relative;
+            display: block;
+        }
+
+        .form-group {
+            margin-bottom: 16px;
+            text-align: left;
+            position: relative;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 13px;
+            font-weight: 500;
+            color: #c9a96e;
+            margin-bottom: 6px;
+            letter-spacing: 0.5px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 14px 18px;
+            border: 1px solid #444;
+            border-radius: 10px;
+            background: #2d2a26;
+            color: #fff;
+            font-size: 15px;
+            font-family: 'Inter', sans-serif;
+            transition: border-color 0.3s ease;
+            outline: none;
+        }
+
+        .form-group input::placeholder {
+            color: #777;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #c9a96e;
+        }
+
+        .form-group select {
+            appearance: none;
+            cursor: pointer;
+        }
+
+        .form-group select option {
+            background: #2d2a26;
+            color: #fff;
+        }
+
+        .form-submit {
+            margin-top: 24px;
+            width: 100%;
+            background: linear-gradient(135deg, #c9a96e, #e0c88a);
+            color: #1a1a1a;
+            font-weight: 700;
+            padding: 18px 40px;
+            font-size: 16px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(139, 105, 20, 0.3);
+            position: relative;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 30px rgba(139, 105, 20, 0.4);
+        }
+
+        .form-privacy {
+            font-size: 12px;
+            color: #777;
+            margin-top: 16px;
+            position: relative;
+        }
+
+        /* Success Message */
+        .success-message {
+            display: none;
+            text-align: center;
+            padding: 40px 20px;
+            position: relative;
+        }
+
+        .success-message .success-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        .success-message h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #c9a96e;
+        }
+
+        .success-message p {
+            font-size: 15px;
+            color: #aaa;
+            line-height: 1.7;
+        }
+
+        /* Disclaimer Section */
+        .disclaimer-section {
+            padding: 60px 20px;
+            background: #f2ede5;
+            border-top: 1px solid #e5ded4;
+        }
+
+        .disclaimer-section .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .disclaimer-section h3 {
+            font-size: 14px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #8b6914;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .disclaimer-block {
+            margin-bottom: 24px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #e5ded4;
+        }
+
+        .disclaimer-block:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .disclaimer-block h4 {
+            font-size: 14px;
+            font-weight: 600;
+            color: #3a3530;
+            margin-bottom: 8px;
+        }
+
+        .disclaimer-block p {
+            font-size: 13px;
+            color: #6b6560;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        .footer {
+            padding: 40px 20px;
+            text-align: center;
+            background: #1a1a1a;
+            color: #999;
+        }
+
+        .footer p {
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+
+        .footer-links {
+            margin-top: 16px;
+        }
+
+        .footer-links a {
+            color: #c9a96e;
+            text-decoration: none;
+            font-size: 13px;
+            margin: 0 12px;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #e0c88a;
+        }
+
+        .footer-contact {
+            margin-top: 16px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .delay-3 { animation-delay: 0.6s; opacity: 0; }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .form-box {
+                padding: 40px 24px;
+            }
+
+            .included-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* Detailed legal popups */
+        .legal-modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.72);
+            z-index: 9999;
+            padding: 24px;
+            overflow-y: auto;
+        }
+
+        .legal-modal.active {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .legal-modal-content {
+            width: min(920px, 100%);
+            background: #fefdfb;
+            color: #2d2a26;
+            border-radius: 18px;
+            margin: 32px auto;
+            box-shadow: 0 22px 80px rgba(0, 0, 0, 0.35);
+            border: 1px solid #eadfce;
+            overflow: hidden;
+        }
+
+        .legal-modal-header {
+            position: sticky;
+            top: 0;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 22px 28px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            z-index: 1;
+        }
+
+        .legal-modal-header h2 {
+            font-size: clamp(20px, 3vw, 28px);
+            margin: 0;
+            color: #fff;
+            line-height: 1.2;
+        }
+
+        .legal-close {
+            appearance: none;
+            border: 1px solid rgba(255,255,255,0.25);
+            background: rgba(255,255,255,0.08);
+            color: #fff;
+            border-radius: 999px;
+            width: 42px;
+            height: 42px;
+            font-size: 24px;
+            line-height: 1;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+
+        .legal-close:hover {
+            background: rgba(255,255,255,0.16);
+        }
+
+        .legal-modal-body {
+            padding: 30px 34px 36px;
+        }
+
+        .legal-modal-body .legal-updated {
+            color: #8b6914;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .legal-modal-body h3 {
+            font-size: 18px;
+            color: #1a1a1a;
+            margin: 28px 0 10px;
+        }
+
+        .legal-modal-body p,
+        .legal-modal-body li {
+            color: #514c47;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .legal-modal-body ul {
+            padding-left: 22px;
+            margin: 10px 0 0;
+        }
+
+        .legal-company-box {
+            background: #f6efe5;
+            border: 1px solid #e7d7bd;
+            border-radius: 12px;
+            padding: 18px 20px;
+            margin: 20px 0 6px;
+        }
+
+        .legal-company-box p {
+            margin-bottom: 6px;
+        }
+
+        @media (max-width: 600px) {
+            .legal-modal {
+                padding: 12px;
+            }
+            .legal-modal-content {
+                margin: 12px auto;
+                border-radius: 14px;
+            }
+            .legal-modal-header {
+                padding: 18px 18px;
+            }
+            .legal-modal-body {
+                padding: 22px 20px 28px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<!-- Hero -->
+<section class="hero">
+<div class="hero-content">
+<span class="hero-cross">✝</span>
+<h1 class="playfair fade-in">
+                A devotional guide to strengthen your faith
+                <span class="delay-1">Our Lady Undoer of Knots Novena</span>
+</h1>
+<p class="delay-2">A complete devotional digital guide with prayers, meditations and reflections for the nine days of the novena — a simple path of faith, prayer and trust.</p>
+<a class="btn-primary delay-3" href="#contact-form">I want to learn more</a>
+</div>
+</section>
+<!-- Pain Section -->
+<section class="pain-section">
+<div class="container">
+<p class="section-subtitle">Who this guide is for</p>
+<h2 class="playfair">For those who want to live their faith more deeply and find inner peace</h2>
+<ul class="pain-list">
+<li>You feel the need to reconnect with your spirituality</li>
+<li>You want a daily moment of guided and structured prayer</li>
+<li>You are seeking spiritual comfort during difficult moments</li>
+<li>You want to learn and practise the devotion to Our Lady Undoer of Knots</li>
+<li>You need a clear structure to keep a nine-day prayer routine</li>
+<li>You want to complete the novena with guidance and supporting materials</li>
+</ul>
+</div>
+</section>
+<!-- Divider -->
+<div class="divider">
+<span></span>
+<span class="divider-icon">✝</span>
+<span></span>
+</div>
+<!-- Promise Section -->
+<section class="promise-section">
+<div class="container">
+<p class="section-subtitle">About the devotion</p>
+<h2 class="playfair">A Catholic tradition of faith and trust in Mary’s intercession</h2>
+<p>The devotion to Our Lady Undoer of Knots began in Germany in the seventeenth century and is practised by faithful people around the world. Pope Francis helped spread this devotion throughout Latin America.</p>
+<blockquote class="playfair">
+                "Virgin Mary, Mother of beautiful love, Mother who never abandoned a child who cried for help, help me trust God’s plan for my life."
+            </blockquote>
+<p>This guide was prepared to support nine days of prayer through clear reflections and traditional devotional prayers.</p>
+</div>
+</section>
+<!-- What's Included -->
+<section class="included-section">
+<div class="container">
+<p class="section-subtitle">What is included</p>
+<h2 class="playfair">Complete content for your devotional journey</h2>
+<div class="included-grid">
+<div class="included-card">
+<span class="included-card-icon">📿</span>
+<h3>Nine Days of Guided Prayer</h3>
+<p>Each day includes a biblical reflection, a dedicated prayer and a meditation on Marian devotion.</p>
+</div>
+<div class="included-card">
+<span class="included-card-icon">🎧</span>
+<h3>Meditation Audios</h3>
+<p>Audio meditations designed to accompany your daily prayer with calm and focus.</p>
+</div>
+<div class="included-card">
+<span class="included-card-icon">📖</span>
+<h3>Spiritual Journal</h3>
+<p>A simple journal to record your intentions, reflections and experience throughout the nine days.</p>
+</div>
+<div class="included-card">
+<span class="included-card-icon">🕊️</span>
+<h3>Consecration Prayer</h3>
+<p>On the final day, a consecration prayer to Our Lady following the devotional tradition.</p>
+</div>
+<div class="included-card">
+<span class="included-card-icon">🙏</span>
+<h3>Complete Litany</h3>
+<p>The full litany of Our Lady Undoer of Knots for personal prayer and reflection.</p>
+</div>
+<div class="included-card">
+<span class="included-card-icon">💬</span>
+<h3>Support Community</h3>
+<p>Access to a community of people completing the novena together and sharing their faith experience.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="testimonials">
+<div class="container">
+<p class="section-subtitle">Participant experiences</p>
+<h2 class="playfair">What people say about the material</h2>
+<p class="testimonials-disclaimer">The testimonials below represent individual experiences. Spiritual results are personal and may vary from person to person. This product does not guarantee any specific outcome.</p>
+<div class="testimonial-grid">
+<div class="testimonial-card">
+<p>"The material helped me keep a daily prayer routine. I felt a great sense of peace during the nine days and felt more connected to my faith."</p>
+<span class="name">Maria A.</span><br/>
+<span class="location">Toronto, ON</span>
+</div>
+<div class="testimonial-card">
+<p>"I had never managed to complete a full novena before. With the guide and audios, I followed each day. The content is very well prepared."</p>
+<span class="name">Cláudia F.</span><br/>
+<span class="location">Montréal, QC</span>
+</div>
+<div class="testimonial-card">
+<p>"I recommend it to anyone looking for a calm and prayerful moment. The meditations are beautiful and the journal really helps with reflection."</p>
+<span class="name">Tereza S.</span><br/>
+<span class="location">Ottawa, ON</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Form Section -->
+<section class="form-section" id="contact-form">
+<div class="container">
+<p class="section-subtitle">I am interested</p>
+<h2 class="playfair" style="font-size: clamp(24px, 4vw, 34px); margin-bottom: 16px; color: #1a1a1a;">Fill in the form below and we will contact you</h2>
+<p style="font-size: 16px; color: #6b6560; margin-bottom: 40px;">Leave your details and our team will contact you to explain the novena guide and answer your questions.</p>
+<div class="form-box">
+<p class="section-subtitle">Our Lady Undoer of Knots Novena</p>
+<h2 class="playfair">I want to receive more information</h2>
+<span class="price-highlight">Complete digital material for CAD $197.00</span>
+<form id="leadForm">
+<div class="form-group">
+<label for="fullName">Full name</label>
+<input id="fullName" name="fullName" placeholder="Enter your name" required="" type="text"/>
+</div>
+<div class="form-group">
+<label for="email">E-mail</label>
+<input id="email" name="email" placeholder="your@email.com" required="" type="email"/>
+</div>
+<div class="form-group">
+<label for="phone">Phone or WhatsApp</label>
+<input id="phone" name="phone" placeholder="(000) 000-0000" required="" type="tel"/>
+</div>
+<div class="form-group">
+<label for="cityProvince">City / Province</label>
+<input id="cityProvince" name="cityProvince" placeholder="Ex: Toronto, ON" type="text"/>
+</div>
+<div class="form-group">
+<label for="contactTime">Best time to contact you</label>
+<select id="contactTime" name="contactTime">
+<option value="">Select a time</option>
+<option value="morning">Morning (8 AM - 12 PM)</option>
+<option value="afternoon">Afternoon (12 PM - 6 PM)</option>
+<option value="evening">Evening (6 PM - 9 PM)</option>
+<option value="any_time">Any time</option>
+</select>
+</div>
+<button class="form-submit" type="submit">I want to be contacted ✝</button>
+<p class="form-privacy">🔒 Your information is handled securely. We do not sell your personal information. By submitting the form, you agree to our Privacy Policy.</p>
+</form>
+<div class="success-message" id="successMessage">
+<span class="success-icon">🕊️</span>
+<h3 class="playfair">We received your details!</h3>
+<p>Our team will contact you shortly by email, phone or messaging app to explain the details and answer your questions. Thank you for reaching out. ✝</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Disclaimer Section -->
+<section class="disclaimer-section">
+<div class="container"><h3>Legal Notices and Company Information</h3><div class="disclaimer-block"><h4>Disclaimer — Google Ads and YouTube Ads</h4><p>This site is not part of Google or YouTube and is not endorsed by them. Google and YouTube are registered trademarks of GOOGLE LLC. This website and its content are not sponsored, approved or endorsed by Google Inc., YouTube, Google Ads, or any of their subsidiaries or affiliates. Responsibility for the content of this website belongs exclusively to the company identified below.</p></div><div class="disclaimer-block"><h4>Disclaimer — Facebook and Meta</h4><p>This site is not part of Facebook, Instagram or Meta Platforms, Inc. and is not endorsed by them. Facebook and Instagram are registered trademarks of META PLATFORMS, Inc. We have no sponsorship, approval or association with Meta Platforms, Inc. or any of its subsidiaries.</p></div><div class="disclaimer-block"><h4>Nature of the Content</h4><p>This website presents informational and/or promotional content relating to the products and services offered. The information presented should not be interpreted as medical, psychological, financial or legal advice. Any decision made by the visitor is the visitor’s own responsibility.</p></div><div class="disclaimer-block"><h4>Results and Testimonials</h4><p>Testimonials presented on this website represent individual experiences. They do not constitute a promise, guarantee or prediction of results. Experiences and perceptions may vary from person to person.</p></div><div class="disclaimer-block"><h4>Data Collection and Contact</h4><p>By completing the form on this website, you authorize our team to contact you by email, phone or messaging application using the details you provide, only in relation to the product or service presented on this page. You may request access, correction or deletion of your information at any time by emailing contact@tubevault.site. Personal information is handled in line with applicable Canadian privacy practices, including PIPEDA and Québec private-sector privacy requirements.</p></div><div class="disclaimer-block"><h4>Refund Policy</h4><p>Refund, cancellation and support requests will be reviewed according to the commercial terms presented at the time of purchase, the payment platform used and applicable consumer protection rules in Canada and Québec.</p></div><div class="disclaimer-block"><h4>Company Identification</h4><p>Registered Company Name: VÊTEMENT LUXBOMB INC. | English Name: LUXBOMB CLOTHING INC. | Québec Enterprise Number (NEQ): 1172757925 | Registered Address: 101-150 rue King Montréal (Québec) H3C2P3 Canada | Contact Address: 150 Rue King, Montréal, QC H3C 2P3, Canada | E-mail: contact@tubevault.site | This site is owned and operated by the company identified above.</p></div></div>
+</section>
+<!-- Footer -->
+<footer class="footer"><p>© 2026 — VÊTEMENT LUXBOMB INC. - All rights reserved.</p><p>Registered Company Name: VÊTEMENT LUXBOMB INC. | English Name: LUXBOMB CLOTHING INC.</p><p>Québec Enterprise Number (NEQ): 1172757925</p><p>Registered Address: 101-150 rue King Montréal (Québec) H3C2P3 Canada</p><p>Contact Address: 150 Rue King, Montréal, QC H3C 2P3, Canada</p><div class="footer-links"><a href="#" id="openPrivacy">Privacy Policy</a><a href="#" id="openTerms">Terms of Service</a><a href="mailto:contact@tubevault.site">Contact</a></div><p class="footer-contact">E-mail: contact@tubevault.site</p><p style="margin-top: 16px; font-size: 11px; color: #666;">This site is not part of Google, YouTube, Facebook, Instagram or Meta Platforms, Inc. and is not endorsed by any of these companies. Google and YouTube are registered trademarks of GOOGLE LLC. Facebook and Instagram are registered trademarks of META PLATFORMS, Inc.</p></footer>
+
+<!-- Privacy Policy Modal -->
+<div class="legal-modal" id="privacyModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="privacyTitle">
+    <div class="legal-modal-content">
+        <div class="legal-modal-header">
+            <h2 id="privacyTitle" class="playfair">Privacy Policy</h2>
+            <button type="button" class="legal-close" aria-label="Close Privacy Policy" data-close-modal>&times;</button>
+        </div>
+        <div class="legal-modal-body">
+            <p class="legal-updated">Last updated: 2026</p>
+
+            <h3>1. Company responsible for this website</h3>
+            <p>This website is operated by VÊTEMENT LUXBOMB INC., also known in English as LUXBOMB CLOTHING INC., a Québec registered corporation with Québec Enterprise Number (NEQ) 1172757925. The registered address is 101-150 rue King Montréal (Québec) H3C2P3 Canada. The contact address used for customer communication is 150 Rue King, Montréal, QC H3C 2P3, Canada. Contact email: contact@tubevault.site.</p>
+
+            <h3>2. Scope of this policy</h3>
+            <p>This Privacy Policy explains how we collect, use, store and protect personal information submitted through this website, including contact forms, email links and customer support requests. It applies to visitors, prospective customers and users who voluntarily submit their details to us.</p>
+
+            <h3>3. Personal information we may collect</h3>
+            <ul>
+                <li>Full name and contact details, such as email address, phone number or messaging-app number.</li>
+                <li>City, province, preferred contact time and any message or information voluntarily submitted through the form.</li>
+                <li>Technical data such as browser type, device type, approximate location, IP address, pages viewed and interaction data, when such data is collected by hosting, analytics or advertising tools.</li>
+                <li>Purchase, payment, refund and customer-support information when a transaction or service request is made through a connected payment or service provider.</li>
+            </ul>
+
+            <h3>4. How we use personal information</h3>
+            <p>We use personal information to respond to enquiries, provide information about the product or service presented on this site, manage customer support, process commercial requests, maintain website security, improve the user experience, comply with legal obligations and keep accurate business records.</p>
+
+            <h3>5. Consent and lawful handling of information</h3>
+            <p>By submitting a form or contacting us through this website, you consent to being contacted using the details provided. We handle personal information in line with applicable Canadian privacy practices, including the Personal Information Protection and Electronic Documents Act (PIPEDA) where applicable, and Québec private-sector privacy requirements.</p>
+
+            <h3>6. Communication with visitors</h3>
+            <p>We may contact you by email, phone or messaging application only in connection with your enquiry, a service request, purchase support or information related to the product or service presented on this website. You may ask us to stop contacting you at any time by emailing contact@tubevault.site.</p>
+
+            <h3>7. Cookies, analytics and advertising technologies</h3>
+            <p>This website may use cookies, pixels or similar technologies to support basic functionality, measure traffic, improve content and assess advertising performance. These tools may collect technical and usage information. You can control cookies through your browser settings, although disabling cookies may affect website functionality.</p>
+
+            <h3>8. Sharing of information</h3>
+            <p>We do not sell personal information. Information may be shared only with service providers that help operate the website, process payments, deliver emails, provide customer support, host data, detect fraud or comply with legal requirements. These providers are expected to handle information securely and only for the purpose of providing their services.</p>
+
+            <h3>9. International processing</h3>
+            <p>Some third-party service providers may process or store information outside Québec or Canada. When this happens, information may be subject to the laws of the jurisdiction where it is processed. We take reasonable steps to use service providers that maintain appropriate safeguards.</p>
+
+            <h3>10. Data retention</h3>
+            <p>We keep personal information only for as long as reasonably necessary for the purposes described in this policy, including responding to enquiries, providing support, maintaining business records, resolving disputes and complying with legal or accounting obligations.</p>
+
+            <h3>11. Security</h3>
+            <p>We use reasonable administrative, technical and organisational safeguards to protect personal information against unauthorised access, misuse, loss or disclosure. No online transmission or storage method is completely secure, so we cannot guarantee absolute security.</p>
+
+            <h3>12. Your privacy rights</h3>
+            <p>You may request access to your personal information, correction of inaccurate information, withdrawal of consent where applicable, deletion of information where legally permitted, or details about how your information has been used. Requests can be sent to contact@tubevault.site.</p>
+
+            <h3>13. Children’s privacy</h3>
+            <p>This website is not intended for children under the age of majority in their province or territory. We do not knowingly collect personal information from children. If you believe a child has submitted personal information, please contact us and we will review the matter.</p>
+
+            <h3>14. Changes to this policy</h3>
+            <p>We may update this Privacy Policy from time to time to reflect operational, legal or regulatory changes. The most recent version will be available through the Privacy Policy link on this website.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Terms of Service Modal -->
+<div class="legal-modal" id="termsModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="legal-modal-content">
+        <div class="legal-modal-header">
+            <h2 id="termsTitle" class="playfair">Terms of Service</h2>
+            <button type="button" class="legal-close" aria-label="Close Terms of Service" data-close-modal>&times;</button>
+        </div>
+        <div class="legal-modal-body">
+            <p class="legal-updated">Last updated: 2026</p>
+
+            <h3>1. Website operator</h3>
+            <p>This website is operated by VÊTEMENT LUXBOMB INC., also known in English as LUXBOMB CLOTHING INC., Québec Enterprise Number (NEQ) 1172757925. Registered address: 101-150 rue King Montréal (Québec) H3C2P3 Canada. Contact address: 150 Rue King, Montréal, QC H3C 2P3, Canada. Email: contact@tubevault.site.</p>
+
+            <h3>2. Acceptance of these terms</h3>
+            <p>By accessing this website, submitting a form, contacting us or using any service presented here, you agree to these Terms of Service. If you do not agree, you should stop using the website.</p>
+
+            <h3>3. Website content</h3>
+            <p>The content on this website is provided for informational, promotional and customer-support purposes. We make reasonable efforts to keep information accurate and clear, but we do not guarantee that every detail will always be complete, current or free of minor errors.</p>
+
+            <h3>4. Nature of the product or service</h3>
+            <p>The website may present digital content, informational material, services, offers or customer-support channels. Unless expressly stated otherwise, any content provided is for personal, educational, informational or devotional use and should not be interpreted as medical, psychological, legal, financial or professional advice.</p>
+
+            <h3>5. No guaranteed outcomes</h3>
+            <p>Testimonials, examples, descriptions or user experiences are provided for context only. They do not represent a guarantee, promise or prediction of any specific outcome. Individual experiences may vary.</p>
+
+            <h3>6. User responsibilities</h3>
+            <ul>
+                <li>You agree to provide accurate and lawful information when submitting a form or contacting us.</li>
+                <li>You agree not to misuse the website, interfere with its operation, attempt unauthorised access or submit harmful code.</li>
+                <li>You agree not to copy, resell, redistribute or exploit website content without permission.</li>
+                <li>You are responsible for ensuring that any product, service or content is suitable for your own needs before making a decision.</li>
+            </ul>
+
+            <h3>7. Orders, payments and support</h3>
+            <p>If a product or service is offered for purchase, the applicable price, payment method, delivery terms, refund terms and support conditions will be shown at or before the point of purchase, or through the payment platform used. Payment processors and service providers may have their own terms and privacy policies.</p>
+
+            <h3>8. Refunds and cancellations</h3>
+            <p>Refund and cancellation requests are reviewed according to the terms presented at the time of purchase, the payment provider used and applicable consumer protection rules in Canada and Québec. To request support, contact us at contact@tubevault.site with your name, purchase details and reason for the request.</p>
+
+            <h3>9. Intellectual property</h3>
+            <p>Text, design, layout, graphics, branding, digital materials and other content on this website are owned by or licensed to the company unless otherwise stated. You may not reproduce, modify, distribute, sell or commercially exploit the content without prior written permission.</p>
+
+            <h3>10. Third-party platforms and links</h3>
+            <p>This website may include references, links, embedded content, advertising platforms or payment providers operated by third parties. We are not responsible for third-party websites, policies, services or actions. Use of third-party services is subject to their own terms.</p>
+
+            <h3>11. Advertising platform disclaimers</h3>
+            <p>This website is not part of Google, YouTube, Facebook, Instagram or Meta Platforms, Inc. and is not endorsed by any of those companies. Google and YouTube are registered trademarks of GOOGLE LLC. Facebook and Instagram are registered trademarks of META PLATFORMS, Inc.</p>
+
+            <h3>12. Limitation of liability</h3>
+            <p>To the maximum extent permitted by applicable law, VÊTEMENT LUXBOMB INC. is not liable for indirect, incidental, consequential or special damages arising from use of this website, reliance on its content, technical interruptions, third-party services or user decisions based on website information.</p>
+
+            <h3>13. Availability of the website</h3>
+            <p>We may update, suspend, change or discontinue any part of the website at any time. We do not guarantee uninterrupted access, error-free operation or compatibility with every device or browser.</p>
+
+            <h3>14. Governing law</h3>
+            <p>These Terms of Service are intended to be interpreted according to applicable laws in Québec and Canada, without limiting any mandatory consumer rights that may apply in your province, territory or jurisdiction.</p>
+
+            <h3>15. Contact</h3>
+            <p>For questions about these Terms of Service, contact VÊTEMENT LUXBOMB INC. at contact@tubevault.site.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script>
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (!href || href === '#') return;
+            const target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+
+    // Canada/US style phone mask
+    const phoneInput = document.getElementById('phone');
+    if (phoneInput) {
+        phoneInput.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.length > 10) value = value.slice(0, 10);
+            if (value.length > 6) {
+                value = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6)}`;
+            } else if (value.length > 3) {
+                value = `(${value.slice(0,3)}) ${value.slice(3)}`;
+            } else if (value.length > 0) {
+                value = `(${value}`;
+            }
+            e.target.value = value;
+        });
+    }
+
+    // Form submission
+    const leadForm = document.getElementById('leadForm');
+    if (leadForm) {
+        leadForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const formData = {
+                fullName: document.getElementById('fullName').value,
+                email: document.getElementById('email').value,
+                phoneOrMessagingApp: document.getElementById('phone').value,
+                cityProvince: document.getElementById('cityProvince').value,
+                bestContactTime: document.getElementById('contactTime').value,
+                timestamp: new Date().toLocaleString('en-CA')
+            };
+
+            console.log('Lead captured:', formData);
+
+            this.style.display = 'none';
+            const subtitle = document.querySelector('.form-box .section-subtitle');
+            const heading = document.querySelector('.form-box h2');
+            const price = document.querySelector('.form-box .price-highlight');
+            if (subtitle) subtitle.style.display = 'none';
+            if (heading) heading.style.display = 'none';
+            if (price) price.style.display = 'none';
+            const successMessage = document.getElementById('successMessage');
+            if (successMessage) successMessage.style.display = 'block';
+        });
+    }
+
+    // Detailed legal popups
+    const privacyModal = document.getElementById('privacyModal');
+    const termsModal = document.getElementById('termsModal');
+    const openPrivacy = document.getElementById('openPrivacy');
+    const openTerms = document.getElementById('openTerms');
+
+    function openModal(modal) {
+        if (!modal) return;
+        modal.classList.add('active');
+        modal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modal) {
+        if (!modal) return;
+        modal.classList.remove('active');
+        modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+    }
+
+    if (openPrivacy) {
+        openPrivacy.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(privacyModal);
+        });
+    }
+
+    if (openTerms) {
+        openTerms.addEventListener('click', function(e) {
+            e.preventDefault();
+            openModal(termsModal);
+        });
+    }
+
+    document.querySelectorAll('[data-close-modal]').forEach(button => {
+        button.addEventListener('click', function() {
+            closeModal(this.closest('.legal-modal'));
+        });
+    });
+
+    document.querySelectorAll('.legal-modal').forEach(modal => {
+        modal.addEventListener('click', function(e) {
+            if (e.target === modal) closeModal(modal);
+        });
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+            closeModal(privacyModal);
+            closeModal(termsModal);
+        }
+    });
+
+    // Scroll reveal
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.pain-list li, .included-card, .testimonial-card').forEach(el => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = 'all 0.6s ease';
+        revealObserver.observe(el);
+    });
+</script>
+
+</body>
+</html>
